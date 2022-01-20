@@ -1,0 +1,252 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Heebo", sans-serif;
+  text-decoration: none;
+  transition: all 0.7s ease;
+  scroll-behavior: smooth;
+}
+.navigation {
+  display: flex;
+  justify-content: end;
+  margin: 27px 100px;
+}
+.navigation a {
+  margin-left: 27px;
+  color: black;
+  font-weight: 600;
+}
+.navigation .menu {
+  display: none;
+}
+/*========= banner style =========*/
+body {
+  background-color: #e5e5e5;
+  overflow-x: hidden;
+}
+
+.banner {
+  display: flex;
+  padding: 0 214px;
+
+  min-height: 70vh;
+  align-items: center;
+}
+.banner .info {
+  margin-right: 100px;
+}
+.banner .info h1 {
+  font-size: 2.8em;
+  font-weight: 700;
+  line-height: 60px;
+  margin-bottom: 20px;
+}
+.banner .info p {
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 23px;
+  margin-bottom: 35px;
+}
+.banner .info a {
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 23px;
+  margin-bottom: 20px;
+  color: #fff;
+  background-color: #ff6464;
+  padding: 10px 20px;
+}
+.banner .photo img {
+  width: 243px;
+  height: 243px;
+  border-radius: 50%;
+}
+.posts {
+  background-color: #edf7fa;
+  padding: 20px 214px;
+}
+.posts .post-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.posts .post-cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  gap: 30px;
+}
+.posts .post-card {
+  background-color: #fff;
+  padding: 20px;
+}
+.posts .post-card .post h2 {
+  font-size: 1.8em;
+  margin-bottom: 20px;
+}
+.posts .post-card .post span {
+  display: inline-block;
+  font-size: 1em;
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
+.posts .post-card .post p {
+  display: inline-block;
+  font-size: 1em;
+  margin-bottom: 20px;
+  padding-right: 50px;
+  line-height: 30px;
+  width: 90%;
+}
+.featured-works {
+  padding: 20px 214px;
+
+  background-color: #e5e5e5;
+}
+.featured-works .work {
+  display: flex;
+  border-bottom: 2px solid #dadada;
+  padding-bottom: 20px;
+  margin-top: 20px;
+}
+.featured-works .work img {
+  width: 15.375em;
+  height: 11.75em;
+  border-radius: 0.375em;
+}
+.featured-works .work .work-info {
+  padding: 0 20px;
+}
+.featured-works .work .work-info h2 {
+  padding-bottom: 10px;
+  font-size: 1.875em;
+}
+.featured-works .work .work-info span {
+  padding-bottom: 10px;
+  font-size: 1.25em;
+  color: #8695a4;
+  margin-right: 15px;
+  margin-bottom: 20px;
+}
+.featured-works .work .work-info .hover {
+  color: #fff;
+  font-weight: 600;
+  display: inline-block;
+  background-color: black;
+  padding: 1px 8px;
+  border-radius: 50px;
+}
+footer {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.social {
+  display: flex;
+  margin-top: 60px;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.social a {
+  color: #21243d;
+  font-size: 40px;
+}
+.social a:not(:last-child) {
+  margin-right: 10px;
+}
+.blogs {
+  padding: 50px 214px;
+}
+.blogs .blog {
+  border-bottom: 2px solid #dadada;
+  padding-bottom: 20px;
+}
+.blogs .blog span {
+  padding-bottom: 10px;
+  font-size: 1em;
+  color: #8695a4;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+.blogs .blog .hover {
+  color: black;
+  font-weight: 600;
+}
+@media screen and (min-width: 1400px) {
+  .posts .post-cards {
+    gap: 100px;
+  }
+  .posts .post-card {
+    background-color: #fff;
+    padding: 50px;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .banner {
+    padding: 20px 50px;
+  }
+  .posts {
+    width: 100%;
+    background-color: #edf7fa;
+    padding: 20px 50px;
+  }
+  .featured-works {
+    padding: 20px 50px;
+  }
+  .blogs {
+    padding: 50px 50px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .banner {
+    padding: 20px 5px;
+
+    flex-direction: column-reverse;
+  }
+
+  .posts {
+    width: 100%;
+    background-color: #edf7fa;
+    padding: 20px 10px;
+  }
+  .featured-works {
+    padding: 20px 10px;
+  }
+  .blogs {
+    padding: 50px 10px;
+  }
+  .post-cards {
+    flex-direction: column;
+  }
+  .banner .info h1 {
+    font-size: 2.2em;
+    margin-top: 20px;
+
+    margin-left: 50px;
+  }
+  .banner .info p {
+    margin-bottom: 35px;
+    margin-left: 50px;
+  }
+  .banner .info a {
+    margin-left: 50px;
+    margin-bottom: 50px;
+  }
+  .featured-works .work {
+    display: flex;
+    flex-direction: column;
+  }
+  .featured-works .work .work-info {
+    padding: 0;
+  }
+  .featured-works .work img {
+    width: 100%;
+  }
+  .navigation {
+    justify-content: center;
+  }
+}
